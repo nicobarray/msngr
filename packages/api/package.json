@@ -1,0 +1,30 @@
+{
+  "name": "msngr-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/yahwastaken/msngr",
+  "author": "Nicolas Barray <nbarray@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "eslintConfig": {
+    "extends": [
+      "prettier"
+    ],
+    "plugins": [
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": "error"
+    }
+  },
+  "dependencies": {
+    "express": "4.16.4",
+    "moment": "2.23.0",
+    "uuid": "3.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "1.18.9"
+  }
+}
