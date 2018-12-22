@@ -1,0 +1,9 @@
+{
+  "name": "msngr",
+  "version": "1.0.0",
+  "description": "Privacy-first messaging app",
+  "repository": "git@github.com:yahwastaken/msngr.git",
+  "author": "Nicolas Barray <nbarray@gmail.com>",
+  "license": "MIT",
+  "private": true
+}
