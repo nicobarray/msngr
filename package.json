@@ -5,5 +5,8 @@
   "repository": "git@github.com:yahwastaken/msngr.git",
   "author": "Nicolas Barray <nbarray@gmail.com>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "lerna": "^3.8.0"
+  }
 }
