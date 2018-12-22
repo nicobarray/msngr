@@ -5,13 +5,21 @@ const AppLayout = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+`;
+
+const Button = styled.button`
+  width: 200px;
+  height: 50px;
+
+  font-size: 2em;
 `;
 
 class App extends Component {
   render() {
     return (
       <AppLayout>
-        <button>Create</button>
+        <Button>Create</Button>
       </AppLayout>
     );
   }
