@@ -1,0 +1,9 @@
+[
+  [
+    "cdy && cd msngr",
+    [
+      "cdy && cd msngr/packages/app && yarn start",
+      "cdy && cd msngr/packages/api && yarn start"
+    ]
+  ]
+]

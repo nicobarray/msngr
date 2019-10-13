@@ -5,12 +5,18 @@ import { Container } from "react-grid-system";
 
 import Index from "./pages/Index";
 import Chat from "./pages/Chat";
-import Vault from "./pages/Vault";
+import Join from "./pages/Join";
 
 const AppLayout = styled.div`
   background: black;
   height: 100vh;
 `;
+
+if (!localStorage.getItem('pseudo')) {
+  const ts = Date.now() + ''
+  const pseudo ='anon-' + [...ts].reverse().join('').substr(0,5)
+  localStorage.setItem('pseudo', pseudo)
+}
 
 class App extends Component {
   render() {
@@ -20,7 +26,7 @@ class App extends Component {
           <Container>
             <Switch>
               <Route exact path="/chat" component={Chat} />
-              <Route exact path="/vault" component={Vault} />
+              <Route exact path="/join" component={Join} />
               <Route component={Index} />
             </Switch>
           </Container>
